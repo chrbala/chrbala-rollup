@@ -1,0 +1,37 @@
+{
+	"name": "chrbala-rollup",
+	"version": "0.0.1",
+	"description": "My personal rollup settings",
+	"main": "build/index.js",
+	"author": "Chris Bala",
+	"license": "MIT",
+	"scripts": {
+		"lint": "eslint src",
+		"build": "rollup -c",
+		"watch": "nodemon --exec 'npm run build' --ignore build/",
+		"postinstall": "npm run build"
+	},
+	"dependencies": {
+		"rollup": "^0.50.0",
+		"rollup-plugin-babel": "^3.0.2",
+		"rollup-plugin-commonjs": "^8.2.5"
+	},
+	"devDependencies": {
+		"babel-core": "^6.26.0",
+		"babel-plugin-external-helpers": "^6.22.0",
+		"babel-plugin-transform-class-properties": "^6.24.1",
+		"babel-plugin-transform-flow-strip-types": "^6.22.0",
+		"babel-preset-env": "^1.6.1",
+		"babel-preset-react": "^6.24.1",
+		"babel-preset-stage-2": "^6.24.1"
+	},
+	"peerDependencies": {
+		"babel-core": "^6.26.0",
+		"babel-plugin-external-helpers": "^6.22.0",
+		"babel-plugin-transform-class-properties": "^6.24.1",
+		"babel-plugin-transform-flow-strip-types": "^6.22.0",
+		"babel-preset-env": "^1.6.1",
+		"babel-preset-react": "^6.24.1",
+		"babel-preset-stage-2": "^6.24.1"
+	}
+}
