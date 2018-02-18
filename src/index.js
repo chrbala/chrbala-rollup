@@ -14,19 +14,19 @@ export default {
 		babel({
 			exclude: 'node_modules/**',
 			presets: [
-				'react',
+				require.resolve('babel-preset-react'),
 				[
-					'env',
+					require.resolve('babel-preset-env'),
 					{
 						modules: false,
 					},
 				],
-				'stage-2',
+				require.resolve('babel-preset-stage-2'),
 			],
 			plugins: [
-				'transform-flow-strip-types',
-				'babel-plugin-transform-class-properties',
-				'external-helpers',
+				require.resolve('babel-plugin-transform-flow-strip-types'),
+				require.resolve('babel-plugin-transform-class-properties'),
+				require.resolve('babel-plugin-external-helpers'),
 			],
 			babelrc: false,
 		}),
