@@ -5,10 +5,10 @@ import commonjs from 'rollup-plugin-commonjs';
 
 export default {
 	input: 'src/index.js',
-	sourcemap: 'inline',
 	output: {
 		file: 'build/index.js',
 		format: 'cjs',
+		sourcemap: 'inline',
 	},
 	plugins: [
 		babel({
